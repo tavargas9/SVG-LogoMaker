@@ -65,3 +65,16 @@ function writeSVG(fileName, answer) {
     });
 };
 
+function init() {
+    inquirer.prompt(questions)
+        .then((data) => {
+            if (data.text.length > 3) {
+                console.log("Logo text cannot contain more than 3 characters");
+                promptUser();
+            } else {
+                writeSVG('logo.svg', data);
+            };
+        });
+};
+
+init();
