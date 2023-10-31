@@ -26,5 +26,42 @@ const questions = [
     },
 ]
 
+function writeSVG(fileName, answer) {
+    let svg;
+    let shape;
+    if (answer.shape === 'Triangle'){
+        shape = new Triangle();
+        shape.setColor(answer.shapeColor);
+        svg = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
+        ${shape.create()}
+      
+        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
+      
+      </svg>`
+    } else if (answer.shape === 'Square') {
+        shape = new Square();
+        shape.setColor(answer.shapeColor);
+        svg = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+
+        ${shape.create()}
+      
+        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
+      
+      </svg>`
+    } else {
+        shape = new Circle();
+        shape.setColor(answer.shapeColor);
+        svg = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+
+        ${shape.create()}
+      
+        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
+      
+      </svg>`
+    };
+    fs.writeFile(fileName, svg, (err) => {
+        err ? console.log(err) : console.log("Generated logo.svg");
+    });
+};
 
