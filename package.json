@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "inquirer": "^9.2.11"
+  },
+  "name": "svg-logomaker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomas Vargas",
+  "license": "MIT",
+  "description": ""
+}
