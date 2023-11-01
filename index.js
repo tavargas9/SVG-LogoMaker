@@ -36,7 +36,7 @@ function writeSVG(fileName, answer) {
 
         ${shape.create()}
       
-        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
+        <text x="150" y="130" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
       
       </svg>`
     } else if (answer.shape === 'Square') {
@@ -46,7 +46,7 @@ function writeSVG(fileName, answer) {
 
         ${shape.create()}
       
-        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
+        <text x="150" y="130" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
       
       </svg>`
     } else {
@@ -56,7 +56,7 @@ function writeSVG(fileName, answer) {
 
         ${shape.create()}
       
-        <text x="150" y="125" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
+        <text x="150" y="130" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
       
       </svg>`
     };
@@ -72,7 +72,7 @@ function init() {
                 console.log("Logo text cannot contain more than 3 characters");
                 promptUser();
             } else {
-                writeSVG('logo.svg', data);
+                writeSVG(`./examples/logo_${data.text}_${data.shape}.svg`, data);
             };
         });
 };
