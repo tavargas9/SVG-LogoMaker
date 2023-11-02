@@ -2,6 +2,6 @@
 
         <circle cx="150" cy="115" r="80" fill="pink" />
       
-        <text x="150" y="130" font-size="60" text-anchor="middle" fill="black">GPS</text>
+        <text x="150" y="135" font-size="60" text-anchor="middle" fill="black">GPS</text>
       
       </svg>

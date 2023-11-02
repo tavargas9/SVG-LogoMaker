@@ -36,7 +36,7 @@ function writeSVG(fileName, answer) {
 
         ${shape.render()}
       
-        <text x="150" y="130" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
+        <text x="150" y="140" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
       
       </svg>`
     } else if (answer.shape === 'Square') {
@@ -46,7 +46,7 @@ function writeSVG(fileName, answer) {
 
         ${shape.render()}
       
-        <text x="150" y="130" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
+        <text x="150" y="135" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
       
       </svg>`
     } else {
@@ -56,7 +56,7 @@ function writeSVG(fileName, answer) {
 
         ${shape.render()}
       
-        <text x="150" y="130" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
+        <text x="150" y="135" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
       
       </svg>`
     };

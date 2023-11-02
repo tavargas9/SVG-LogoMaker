@@ -2,6 +2,6 @@
 
         <rect x="73" y="40" width="160" height="160" fill="green" />
       
-        <text x="150" y="130" font-size="60" text-anchor="middle" fill="white">frt</text>
+        <text x="150" y="135" font-size="60" text-anchor="middle" fill="white">frt</text>
       
       </svg>
