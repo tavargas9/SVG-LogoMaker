@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Triangle, Square, Circle} = require('./lib/shapes.js');
+const { Triangle, Square, Circle } = require('./lib/shapes.js');
 
 const questions = [
     {
@@ -34,7 +34,7 @@ function writeSVG(fileName, answer) {
         shape.setColor(answer.shapeColor);
         svg = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
-        ${shape.create()}
+        ${shape.render()}
       
         <text x="150" y="130" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
       
@@ -44,7 +44,7 @@ function writeSVG(fileName, answer) {
         shape.setColor(answer.shapeColor);
         svg = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
-        ${shape.create()}
+        ${shape.render()}
       
         <text x="150" y="130" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
       
@@ -54,7 +54,7 @@ function writeSVG(fileName, answer) {
         shape.setColor(answer.shapeColor);
         svg = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
-        ${shape.create()}
+        ${shape.render()}
       
         <text x="150" y="130" font-size="60" text-anchor="middle" fill="${answer.textColor}">${answer.text}</text>
       
